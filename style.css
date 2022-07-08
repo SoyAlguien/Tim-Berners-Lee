@@ -1,0 +1,35 @@
+body{
+text-align: center;
+}
+.profile{
+border-radius: 20% 50% 20% 50%;    
+}
+#Welcome{
+background: linear-gradient(rgba(10, 141, 206, 0.68),#3d06ef);    
+height: 100%;
+width: 100%;
+display: table;
+}
+.menu{
+    list-style: none;
+    position: fixed;
+    z-index:10;
+    cursor: pointer;
+    right: 0px;
+}
+.links{
+    float: left;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    font-family: fantasy;
+    font-size: 20px;
+}
+.links:hover{
+    font-size: 25px;
+}
+p{
+    font-family: 'Libre Baskerville', serif;   
+}
+a{text-decoration: none;}
