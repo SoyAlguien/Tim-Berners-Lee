@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,61 +8,111 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <ul class="menu">
-       <li class="links"><a href="#Welcome">Inicio</a></li>
-       <li class="links"><a href="#Videos">Vídeos</a></li>
-       <li class="links"><a href="#Trabajo">Trabajo</a></li>
-       <li class="links"><a href="#Textos">Textos</a></li>
-       <li class="links"><a href="#Contacto">Contacto</a></li> 
-    </ul>
-<section id="Welcome" class="parallax-container"> 
-<div class="parallax-inner">
-<img src="stbl.jpg" alt="" class="profile">
-<h1>Soy<br><span id="name">Tim Berners-Lee</span></h1>
-<h2>Soy el fundador de la World Wide Web</h2>
-</div>
-</section>
-<section id="bio">
-    <h1>¡Hola!</h1>
-    <div class="line"></div>
-    <p>Tim Berners-Lee, el informático británico que fue nombrado caballero por inventar el sistema de navegación de Internet conocido como World Wide Web en 1989 mientras trabajaba en el CERN, el Laboratorio Europeo de Física de Partículas. En 2001 fue nombrado miembro de la Royal Society y en 2004 fue nombrado caballero.<br /><br /> En 1994 Berners-Lee fundó el Consorcio de la World Wide Web (W3C) en el Laboratorio de Ciencias de la Computación (LCS) del Instituto Tecnológico de Massachusetts en Boston. Estaba formado por empresas que querían trabajar juntas para crear estándares web y también mejorar la web. Rápidamente se acordó que la tecnología debía estar libre de derechos y patentes. Berners-Lee ha sido director de este W3C desde su fundación. En 1995 Microsoft produjo la primera versión de Internet Explorer y este navegador comercial creó un enorme crecimiento de sitios web y usuarios de la web. La Web se utilizó por primera vez para el comercio electrónico en 1997.</p>
-</section>
-<section id="Videos">
-    <h1>
-        Videos
-    </h1>
-    <div class="line"></div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/OM6XIICm_qo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/J8hzJxb0rpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/eNzx3PjJ_MA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
-<section id="Trabajo">
-    <h1>
-        Trabajo
-    </h1>
-    <div class="line"></div>
-    <iframe width="1100" height="600" src="https://es.wikipedia.org/wiki/Tim_Berners-Lee" frameborder="0"></iframe>
-</section>
-<section id="Textos">
-    <h1>
-        Textos
-    </h1>
-    <div class="line"></div>
-    <a href="https://webfoundation.org/2019/03/web-birthday-30" target="_blank">30 Años De Internet</a>
-    <br>
-    <a href="https://interestingengineering.com/how-did-tim-berners-lee-change-the-world-with-the-world-wide-web" target="_blank">Tim Berners-Lee cambió el mundo con la World Wide Web</a>
-</section>
-<section>
-    <h1>
-        Contactos
-    </h1>
-    <div class="line"></div>
-    <a href="https://twitter.com/timberners_lee?lang=es"><i class="fa fa-twitter"></i>&nbsp;&nbsp;timberners_lee</a>
-    <a href="https://www.instagram.com/tim.berners.lee/?hl=es"><i class="fa fa-instagram"></i>&nbsp;&nbsp;tim.berners.lee</a>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d77470.85832958085!2d6.033971220329575!3d46.243140721800756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c62fcec737b11%3A0x81bef3ae7a885e31!2sCERN!5e0!3m2!1ses!2smx!4v1657294041676!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Tim Berners-Lee</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="links"><a href="#Welcome">Inicio</a></li>
+                    <li class="links"><a href="#Videos">Vídeos</a></li>
+                    <li class="links"><a href="#Trabajo">Trabajo</a></li>
+                    <li class="links"><a href="#Textos">Textos</a></li>
+                    <li class="links"><a href="#Contacto">Contacto</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="Welcome" class="parallax-container">
+        <div class="parallax-inner">
+            <img src="stbl.jpg" alt="" class="profile">
+            <h1>Soy<br><span id="name">Tim Berners-Lee</span></h1>
+            <h2>Soy el fundador de la World Wide Web</h2>
+        </div>
+    </section>
+    <section id="bio">
+        <h1>¡Hola!</h1>
+        <div class="line"></div>
+        <p>Tim Berners-Lee, el informático británico que fue nombrado caballero por inventar el sistema de navegación de
+            Internet conocido como World Wide Web en 1989 mientras trabajaba en el CERN, el Laboratorio Europeo de
+            Física de Partículas. En 2001 fue nombrado miembro de la Royal Society y en 2004 fue nombrado
+            caballero.<br /><br /> En 1994 Berners-Lee fundó el Consorcio de la World Wide Web (W3C) en el Laboratorio
+            de Ciencias de la Computación (LCS) del Instituto Tecnológico de Massachusetts en Boston. Estaba formado por
+            empresas que querían trabajar juntas para crear estándares web y también mejorar la web. Rápidamente se
+            acordó que la tecnología debía estar libre de derechos y patentes. Berners-Lee ha sido director de este W3C
+            desde su fundación. En 1995 Microsoft produjo la primera versión de Internet Explorer y este navegador
+            comercial creó un enorme crecimiento de sitios web y usuarios de la web. La Web se utilizó por primera vez
+            para el comercio electrónico en 1997.</p>
+    </section>
+    <section id="Videos">
+        <h1>
+            Videos
+        </h1>
+        <div class="line"></div>
+        <iframe  height="315" src="https://www.youtube.com/embed/OM6XIICm_qo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe  height="315" src="https://www.youtube.com/embed/J8hzJxb0rpc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe  height="315" src="https://www.youtube.com/embed/eNzx3PjJ_MA" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+    <section id="Trabajo">
+        <h1>
+            Trabajo
+        </h1>
+        <div class="line"></div>
+        <iframe  height="600" src="https://es.wikipedia.org/wiki/Tim_Berners-Lee" frameborder="0"></iframe>
+    </section>
+    <section id="Textos">
+        <h1>
+            Textos
+        </h1>
+        <div class="line"></div>
+        <a href="https://webfoundation.org/2019/03/web-birthday-30" target="_blank">30 Años De Internet</a>
+        <br>
+        <a href="https://interestingengineering.com/how-did-tim-berners-lee-change-the-world-with-the-world-wide-web"
+            target="_blank">Tim Berners-Lee cambió el mundo con la World Wide Web</a>
+    </section>
+    <section>
+        <h1>
+            Contactos
+        </h1>
+        <div class="line"></div>
+        <a href="https://twitter.com/timberners_lee?lang=es"><i class="fa fa-twitter"></i>&nbsp;&nbsp;timberners_lee</a>
+        <a href="https://www.instagram.com/tim.berners.lee/?hl=es"><i
+                class="fa fa-instagram"></i>&nbsp;&nbsp;tim.berners.lee</a>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d77470.85832958085!2d6.033971220329575!3d46.243140721800756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c62fcec737b11%3A0x81bef3ae7a885e31!2sCERN!5e0!3m2!1ses!2smx!4v1657294041676!5m2!1ses!2smx"
+             height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
 </body>
+
 </html>
