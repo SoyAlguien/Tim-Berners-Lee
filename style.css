@@ -33,3 +33,6 @@ p{
     font-family: 'Libre Baskerville', serif;   
 }
 a{text-decoration: none;}
+iframe{
+    width: 80%;
+}
